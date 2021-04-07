@@ -1,0 +1,27 @@
+.fore {
+  width: 600px;
+  height: 348px;
+  transform: translateZ(0);
+}
+.figure {
+  background: url('./mix-walk.svg') no-repeat;
+  width: 200px;
+  height: 105px;
+  transform: translate3D(200px, 50px, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  /* Complete the animation rules to fulfill the specificiations */
+  animation: walk 1s steps(3) infinite;
+}
+@keyframes walk {
+  /* Complete the keyframes to fulfill the specificiations */
+  50%{
+    background-position: right;
+  }
+  100%{
+    background-position: left;
+  }
+}
+
+
+

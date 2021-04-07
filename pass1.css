@@ -1,0 +1,131 @@
+.in-top .info {
+  /* Complete the animation rules to fulfill the specificiations */
+  transform-origin: 50% 0%;
+  animation: in-top .3s  1 forwards, change-color .3s 1 forwards;
+}
+
+.in-right .info {
+  transform-origin: 100% 0%;
+  animation: in-right .3s  1 forwards, change-color .3s 1 forwards;
+}
+
+.in-bottom .info {
+  /* Complete the animation rules to fulfill the specificiations */
+  transform-origin: 50% 100%;
+  animation: in-bottom .3s  1 forwards, change-color .3s 1 forwards;
+}
+
+.in-left .info {
+  transform-origin: 0% 0%;
+  animation: in-left .3s  1 forwards, change-color .3s 1 forwards;
+}
+
+.out-top .info {
+  /* Complete the animation rules to fulfill the specificiations */
+  transform-origin: 50% 0%;
+  animation: out-top .3s  1 forwards, change-color .3s 1 forwards;
+}
+
+.out-right .info {
+  transform-origin: 100% 50%;
+  animation-name: out-right;
+  animation: out-right .3s  1 forwards, change-color .3s 1 forwards;
+}
+
+.out-bottom .info {
+  /* Complete the animation rules to fulfill the specificiations */
+  transform-origin: 50% 100%;
+  animation: out-bottom .3s  1 forwards, change-color .3s 1 forwards;
+}
+
+.out-left .info {
+  transform-origin: 0% 0%;
+  animation-name: out-left;
+  animation: out-left .3s  1 forwards, change-color .3s 1 forwards;
+}
+
+@keyframes in-top {
+  /* Complete the keyframes to fulfill the specificiations */
+  from {
+    transform: rotate3d(-1,0,0, 90deg)
+    }
+  to {
+    transform: rotate3d(0,0,0, 0deg);
+    }
+}
+@keyframes out-top {
+  /* Complete the keyframes to fulfill the specificiations */
+  from {
+    transform: rotate3d(0,0,0, 0deg)
+    }
+  to {
+    transform: rotate3d(-1,0,0, 104deg)
+    }
+}
+@keyframes in-bottom {
+  /* Complete the keyframes to fulfill the specificiations */
+  from {
+    transform: rotate3d(1,0,0, 90deg)
+    }
+  to {
+    transform: rotate3d(0,0,0, 0deg)
+    }
+}
+@keyframes out-bottom {
+  /* Complete the keyframes to fulfill the specificiations */
+  from {
+    transform: rotate3d(0,0,0, 0deg)
+    }
+  to {
+    transform: rotate3d(1,0,0, 104deg)
+    }
+}
+
+/* Add other animations if you wish to get the additional points */
+
+@keyframes in-right {
+  /* Complete the keyframes to fulfill the specificiations */
+  from {
+    transform: rotate3d(0,-1,0, 90deg)
+    }
+  to {
+    transform: rotate3d(0,0,0, 0deg)
+    }
+}
+
+@keyframes out-right {
+  /* Complete the keyframes to fulfill the specificiations */
+  from {
+    transform: rotate3d(0,0,0, 0deg)
+    }
+  to {
+    transform: rotate3d(0,-1,0, 104deg)
+    }
+}
+
+@keyframes in-left {
+  /* Complete the keyframes to fulfill the specificiations */
+  from {
+    transform: rotate3d(0,1,0, 90deg)
+    }
+  to {
+    transform: rotate3d(0,0,0, 0deg)
+    }
+}
+
+@keyframes out-left {
+  /* Complete the keyframes to fulfill the specificiations */
+  from {
+    transform: rotate3d(0,0,0, 0deg)
+    }
+  to {
+    transform: rotate3d(0,1,0, 104deg)
+    }
+}
+
+@keyframes change-color {
+  /* Complete the keyframes to fulfill the specificiations */
+  to {
+    background-color: palegoldenrod;
+    }
+}
